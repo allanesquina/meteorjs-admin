@@ -1,9 +1,9 @@
 import { Template } from 'meteor/templating';
 import { User } from '../api/api';
 
-import './body.html';
+import './user.html';
 
-Template.fodase.helpers({
+Template.userView.helpers({
     users: function () {
         return User.find({});
     }
