@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+export MONGO_URL=mongodb://localhost:27017/mtadmin
+# if [ -f "mobile-config.js" ]; then
+#   export MOBILE_VERSION=`cat "mobile-config.js" | grep "version:" | grep -o -e "[0-9]\+\.[0-9]\+\.[0-9]\+"`
+# fi
+
+meteor npm install
+meteor --port 3050

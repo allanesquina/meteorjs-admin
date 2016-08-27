@@ -1,1 +1,1 @@
-import '../route.js';
+import '../imports/startup/client';

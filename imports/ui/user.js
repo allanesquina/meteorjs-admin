@@ -1,10 +1,10 @@
 import { Template } from 'meteor/templating';
-import { User } from '../api/api';
+import { Users } from '../api/users/users';
 
 import './user.html';
 
 Template.userView.helpers({
     users: function () {
-        return User.find({});
+        return Users.find().fetch();
     }
 })
